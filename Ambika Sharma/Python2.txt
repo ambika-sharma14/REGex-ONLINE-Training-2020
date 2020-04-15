@@ -1,0 +1,104 @@
+                                                                                                                      PYTHON ASSIGNMENT 2
+
+1. What will be the output of 3 + 4 ** 6 - 9 * 10 / 2 ?
+
+Ans.  4054.0
+
+2. Count the number of vowels present in a string.
+
+Code:
+	
+string=input(" Enter a String: ")
+
+count=0
+for i in range(0,len(string)):
+	if(string[i]=='a' or string[i]=='e' or string[i]=='i' or string[i]=='o' or string[i]=='u'):
+		count=count+1
+
+print("\nThe number of vowels in given string are: ",count)
+
+        Output:
+                      Enter a String: Hey I am Ambika Sharma
+                      The number of vowels in given string are : 8
+
+3. Find out the area of triangle, take base and length from user.
+
+Code:
+
+base=float(input(" Enter the Base: "))
+height=float(input("\n Enter the height: "))
+
+area=0.5*base*height
+
+print("\nThe area of triangle with Base: "+str(base)+" and Height: "+str(height)+" is: "+str(area))
+
+Output:
+            Enter the Base : 12
+            Enter the Height : 15
+            The area of triangle with Base: 12.0 and Height: 15.0 is 90.0
+
+4.  Print the Calendar on the terminal. Ask year as input from user.
+
+Code:
+
+def make_calendar(yyyy, sDay):
+posStart = week_days.index(sDay)
+
+    if is_leap(yyyy):
+calender[1] = ('Feburary', range(1, 29 + 1))
+
+    for mm, days in calender:
+print('{0} {1}'.format(mm, yyyy).center(20, ' '))
+        print(''.join(['{0:<3}'.format(w) for w in week_days]))
+        print('{0:<3}'.format('')*posStart, end='')
+
+        for day in days:
+            print('{0:<3}'.format(day), end='')
+posStart += 1
+            if posStart == 7:
+print()
+posStart = 0
+        print('\n')
+
+def is_leap(yyyy):
+    if yyyy % 4 == 0:
+        if yyyy % 100 == 0:
+            if yyyy % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+
+calender = [('January', range(1, 31 + 1)),
+                  ('Feburary', range(1, 28 + 1)),
+                  ('March', range(1, 31 + 1)),
+                  ('April', range(1, 30 + 1)),
+                 ('May', range(1, 31 + 1)),
+                 ('June', range(1, 30 + 1)),
+                 ('July', range(1, 31 + 1)),
+                 ('August', range(1, 31 + 1)),
+                 ('September', range(1, 30 + 1)),
+                 ('October', range(1, 31 + 1)),
+                 ('November', range(1, 30 + 1)),
+                 ('December', range(1, 31 + 1))]
+
+week_days = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']
+
+yr=int(input(" Enter the year: "))
+startday=input('Enter the startting day of the year i.eMo,Tu,We,Th,Fr,Sa,Su: ')
+make_calendar(yr,startday)
+
+Output: 
+           Enter the year: 2000
+and the given calender is here.
+
+
+
+            
+
+
+	
+

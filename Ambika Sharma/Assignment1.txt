@@ -1,0 +1,23 @@
+                                                                                                                     ASSIGNMENT 1
+
+1.  When we create a user,some hidden files are generated in the directory of the same user at that time.How is  it done?
+
+Ans. hidden file is a folder or file which filesystem utilities do not display by default when showing a directory listing.They are commonly used
+         for storing user preferences or preserving the state of a utility and are frequently created implicity by using various utilities.They are not a 
+         security mechanism because access is not restricted -usually the intent is simply to not "clutter" the display of the contents of a directory 
+         listing with files the user didnot directly create.
+
+2.Make sub directories inside a parent directory by using single mkdir command.
+
+Ans. mkdir-p htg/
+        {articles,images,note,done}
+        The -p flag tells the mkdir command to create the main directory first if it doesn't already exit(htg,in our case).The words in the brackets are
+        part of the "brace expansion list".Each of the items in the brace expansion list is appended separately to the preceding path(/htg).
+
+
+3. Tac command vs Cat command.
+
+Ans. tac command is used to see the content of a file in reverse order i.e from bottom to top.
+        cat command is used to see the content of a file in normal order i.e from top to bottom.
+       Syntax:-
+                    cat filename.txt or tac filename.txt.

@@ -1,0 +1,43 @@
+                                                                                                    ASSIGNMENT 2
+
+1. Change the Umask value for any user permanently.
+
+Ans.  One can change the default Umask value to anything he or she wants ,as long as it's supported of course.To do that ,write a new Umask value
+        in your shell's configuration file(~/.bashrc for Bash) or in the /etc/profile file.
+
+2. Add a new user without using adduser & useradd command.
+
+Ans. Add the user in/etc/passwd file
+        Then add a group with same name in /etc/group
+        And set the passwd with passwd command.
+
+3. How to add a new user with a Unique user id(eg.1345)&check out the unique Id of that user.
+
+Ans.   Use the -u(--uid)option to create a user with specific UID . For eg to create a username with UID of 1500 you would type:
+               sudo useradd-u 1500 username
+               You can verify the user's UID,using the id command:
+                
+               id-u username
+               1500      
+
+4. How to change the group of any folder.
+
+Ans. chgrp www-data foldername
+
+(a)After thischeckout the group name of the files present in that folder.
+
+Ans. sudo chgrp (groupname)(filename).
+
+5. How to change the group of files and the folder with a single command.
+
+Ans. The chgrp command takes the following form:
+         
+        chgrp[OPTIONS]GROUP FILE..Copy 
+       GROUP,name of the new group or the group ID(GID).Numeric GID must be prefixed with the + symbol.
+        FILE....name of one more files.
+
+ (b)Try to change the group of the folder&the files present in the same folder using a single command.
+
+Ans.  sudo chgrp -R groupname filename
+
+

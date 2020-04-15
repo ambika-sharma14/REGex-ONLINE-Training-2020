@@ -1,0 +1,68 @@
+                                                                                                        Python 1 Assignment
+
+
+1. What is JPython & CPython?
+
+Ans. 1) CPython:- a)  It is the most widely used interpreter in Python, developed in C and python, the bindings for the interpreter must be written in a foreign 
+                                  language other than Python.  CPython uses a Global Interpreter Lock (GIL) on each process thus python bytecode for a single process is 
+                                  executed on a single thread.
+
+                              b) This interpreter is not suitable for CPU intensive algorithms. CPython finds its use as many libraries are C optimized i.e. 
+                                   many libraries will run its processes faster in a C based code. Also, python is a dynamic programming language as it allocates the resources                     
+                                   on the go not considering future consequences.
+
+                               c)  However, when the same code is defined for CPython based compiler systems the type definition is taken into consideration.
+                                    The steps of compilation are as follows:- Decoding, Tokenizing, Parsing, AST(Abstract Syntax Tree), Compiling.
+
+    2) Jython or Jpython:-  a)   Jython is an implementation that has been designed for the seamless integration of Python code over Java virtual machine, 
+                                                 the advantage of this integration is that it provides an opportunity for amalgamation of a popular scripting language 
+                                                 like python to a vast library of the Java virtual machine.Jython compiles files to .class extensions.
+
+                                           b)  The Jython programs can inherit and run any Java class and compile the code to bytecode. Along with this Jython can be used to
+                                                 implement any Java-based packages especially desirable for creating solutions using Servlets,Swing, SWT, and AWT packages
+                                                 Jython was created in 1997 by Jim Hugunin. Jython uses the Global interpreter lock (GIL) like CPython.
+
+
+
+
+2. Basic difference between Python2 & Python3?
+
+Ans:-                                        Python 2                                                                                              Python 3                        
+
+     1. It is the more stable and transparent version of the python programming                  1. It is the future of Python designed to address the design flaws in the  
+        language.                                                                                                                                previous versions.
+
+     2. The print-syntax is treated as a statement rather than a funtion which                      2. The print is explicitly treated as a function in Python 3 which requires
+         requires text to be wrapped in paranthesis.                                                                       an extra pair of paranthesis.
+
+      3. ASCII string type is used by default to store strings.                                                    3. Unicode is the imlicit string type by default.
+
+      4.It simply returns an integer to the nearest whole number when dividing                    4.It makes integer division more intuitive by using true division for
+         two integers.                                                                                                                        integers and floats.
+
+      5.Xrange function reconstructs the sequence everytime.                                                  5. Xrange is replaced by range ( ) function in Python 3.
+
+
+3. Difference between ASCII  and Unicode?
+
+Ans.                            ASCII                                                                                                                                 Unicode
+
+      1.The ASCII or American Standard Code for Information Interchange                                 1. Unicode is a computing industry standard for consistent encoding,
+         is a character encoding standard for electronic communication.                                          representation, and handling of text expressed in most of the world's
+                                                                                                                                                           writing systems.
+           
+   
+      2. ASCII stands for American Standard Code for Information Interchange.                         2.  Unicode stands for Universal Character Set.
+                        
+      3. ASCII contains representations for digits, English letters, and other symbols.                 3.  Unicode supports a wide range of characters
+         It supports 128 characters.
+   
+      4. The ASCII uses 7 bits to represent a character .                                                                4.  The Unicode uses 8bit, 16bit or 32bit depending on the encoding
+                                                                                                                                                             type.
+                                                                 
+      5. The ASCII   reuries less space than Unicode.                                                                     5. The Unicode requires more space than ASCII
+ 
+
+
+       
+      
